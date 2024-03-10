@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FitZone</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body class="font-principal">
+    <!-- Header -->
+    <header id="inicio" class="bg-gradient-to-br from-dark-red via-no-black to-black">
+      <nav class="container h-20 flex items-center justify-between">
+        <a href="" class="w-1/3 max-w-[140px]">
+          <img src="./images/logo.png" class="w-full" />
+        </a>
+
+        <input type="checkbox" id="menu" class="peer hidden" />
+        <label
+          for="menu"
+          class="bg-open-menu w-6 h-5 bg-cover bg-center cursor-pointer peer-checked:bg-close-menu peer-checked:fixed peer-checked:right-7 transition-all z-50 md:hidden"
+        ></label>
+
+        <div
+          class="fixed inset-0 bg-gradient-to-b from-white/70 to-black/70 translate-x-full peer-checked:translate-x-0 transition-transform md:static md:bg-none md:translate-x-0 z-40"
+        >
+          <ul
+            class="absolute inset-x-0 top-24 p-12 bg-dark-gray w-[90%] mx-auto rounded-md h-max text-center grid gap-6 font-bold text-no-white shadow-2xl md:w-max md:bg-transparent md:p-0 md:grid-flow-col md:static"
+          >
+            <li>
+              <a href="#inicio" class="scroll-to-section hover:text-sat-red">Inicio</a>
+            </li>
+            <li>
+              <a href="#sobreNosotros" class="scroll-to-section hover:text-sat-red">Sobre Nosotros</a>
+            </li>
+            <li>
+              <a href="#planes" class="scroll-to-section hover:text-sat-red">Planes</a>
+            </li>
+            <li>
+              <a href="#precios" class="scroll-to-section hover:text-sat-red">Precios</a>
+            </li>
+            <li>
+              <a href="./pages/instalaciones.html" class="scroll-to-section hover:text-sat-red">Instalaciones</a>
+            </li>
+          </ul>
+        </div>
+
+        <a href="./pages/login.html" class="button hidden py-3 lg:block">Reservar ahora</a>
+      </nav>
+
+      <section
+        class="container grid gap-8 justify-items-center items-center md:grid-cols-2 md:pt-24"
+      >
+        <article class="text-center space-y-6 md:text-left md:space-y-8">
+          <h1 class="text-4xl font-bold pt-5 text-no-white md:pt-0 md:text-5xl">
+            Transforma tu cuerpo, fortalece tu mente
+          </h1>
+
+          <p class="text-gray-400">
+            En nuestro gimnasio, te ofrecemos el apoyo, el equipo y la
+            motivación para alcanzar tus metas fitness. Únete a nosotros hoy
+            mismo.
+          </p>
+
+          <a href="./pages/login.html" class="button mx-auto shadow-xl shadow-sat-red/30 md:mx-0"
+            >Reservar ahora</a
+          >
+        </article>
+
+        <img
+          src="./images/heroPerson.png"
+          class="w-full max-w-lg self-end mt-12 md:mt-0 md:order-1 md:pt-16"
+        />
+      </section>
+
+      <section
+        class="bg-dark-gray text-center text-white py-9 text-2xl flex justify-center md:text-4xl"
+      >
+        <img src="./images/dumbbell-solid-gray.svg" class="w-14 -rotate-[35deg] hidden md:block">
+        <div class="mx-28">
+          <p class="font-bold">+120 PERSONAS</p>
+          <p>confían en nosotros</p>
+        </div>
+        <img src="./images/dumbbell-solid-gray.svg" class="w-14 rotate-[35deg] hidden md:block">
+      </section>
+    </header>
+
+    <!-- Sobre nosotros -->
+    <div id="sobreNosotros" class="bg-clear-gray">
+      <section
+        class="container py-24 grid gap-12 items-center text-center lg:grid-cols-2 md:text-left"
+      >
+        <img src="./images/sobreNosotros.jpg" class="w-full rounded-xl" />
+
+        <article class="text-white flex flex-col justify-evenly md:p-4">
+          <h2 class="text-2xl font-bold md:text-3xl">
+            Prepárate par alcanzar tus objetivos
+          </h2>
+          <p class="text-gray-300 my-4">
+            En nuestro gimnasio, somos más que un centro de fitness. Desde
+            entrenadores expertos hasta instalaciones de vanguardia, estamos
+            aquí para inspirarte a ser tu mejor versión. Nos dedicamos a
+            cultivar la confianza y el bienestar en cada sesión de
+            entrenamiento.
+          </p>
+          <p class="text-gray-300">
+            Únete a nuestra comunidad y descubre un espacio donde transformamos
+            vidas y alcanzamos metas juntos. En cada paso de tu viaje hacia el
+            éxito físico, estamos comprometidos a apoyarte y guiarte hacia el
+            cumplimiento de tus objetivos.
+          </p>
+        </article>
+      </section>
+    </div>
+
+    <!-- Planes -->
+    <main id="planes" class="bg-dark-gray py-24">
+      <h2 class="text-center text-2xl font-bold text-white mb-12 md:text-3xl">
+        Nuestros Planes
+      </h2>
+      <section
+        class="container grid gap-12 items-center md:grid-cols-2 xl:grid-cols-4"
+      >
+        <div
+          class="bg-semi-gray h-[350px] md:h-[400px] text-white p-12 rounded-xl hover:bg-orange transition-all duration-500"
+        >
+          <img src="./images/dumbbell-solid.svg" class="h-1/3 md:h-1/5 mb-7" />
+
+          <h3 class="text-xl font-bold mb-3 md:text-2xl">
+            Entrenamiento de Fuerza
+          </h3>
+          <p>
+            Nuestros entrenadores te diseñarán un plan de mejora de fuerza
+            progresiva totalmente personalizado.
+          </p>
+        </div>
+
+        <div
+          class="bg-semi-gray h-[350px] md:h-[400px] text-white p-12 rounded-xl hover:bg-orange transition-all duration-500"
+        >
+          <img src="./images/yoga.png" class="h-1/3 md:h-1/5 mb-7" />
+
+          <h3 class="text-xl font-bold mb-3 md:text-2xl">Yoga Básico</h3>
+          <p>
+            Este programa combina yoga con cardio y fuerza para ayudar a perder
+            peso y tonificar.
+          </p>
+        </div>
+
+        <div
+          class="bg-semi-gray h-[350px] md:h-[400px] text-white p-12 rounded-xl hover:bg-orange transition-all duration-500"
+        >
+          <img src="./images/hand-fist-solid.svg" class="h-1/3 md:h-1/5 mb-7" />
+
+          <h3 class="text-xl font-bold mb-3 md:text-2xl">Body Building</h3>
+          <p>
+            Para aquellos que buescan incrementar su fuerza muscular y ganar
+            músculo.
+          </p>
+        </div>
+
+        <div
+          class="bg-semi-gray h-[350px] md:h-[400px] text-white p-12 rounded-xl hover:bg-orange transition-all duration-500"
+        >
+          <img
+            src="./images/person-running-solid.svg"
+            class="h-1/3 md:h-1/5 mb-7"
+          />
+
+          <h3 class="text-xl font-bold mb-3 md:text-2xl">Pérdida de Peso</h3>
+          <p>
+            Nuestro programa de pérdida de peso está diseñado para ayudarte a
+            hacer cambios importantes en tu estilo de vida.
+          </p>
+        </div>
+      </section>
+
+      <a href="./pages/login.html" class="button mx-auto my-10 shadow-xl shadow-sat-red/30"
+        >Reservar ahora</a
+      >
+    </main>
+
+    <!-- Precios -->
+    <section id="precios" class="bg-clear-gray py-24">
+      <h2 class="text-center text-2xl font-bold text-white mb-12 md:text-3xl">
+        Precios
+      </h2>
+
+      <article
+        class="container flex flex-col justify-center items-center gap-12 text-center text-white lg:flex-row"
+      >
+        <div>
+          <p class="text-xl font-bold bg-gray-700 py-4 w-[250px] rounded-full">
+            39€/Mes
+          </p>
+          <p class="text-lg text-gray-500 mt-3">39€/Mes</p>
+        </div>
+
+        <div>
+          <p class="text-xl font-bold bg-orange py-4 w-[250px] rounded-full">
+            284€/Año
+          </p>
+          <p class="text-lg text-gray-500 mt-3">24€/Mes</p>
+        </div>
+
+        <div>
+          <p class="text-xl font-bold bg-gray-700 py-4 w-[250px] rounded-full">
+            105€/Trimestral
+          </p>
+          <p class="text-lg text-gray-500 mt-3">35€/Mes</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-semi-gray py-12">
+      <img src="./images/logo.png" class="mx-auto visible md:mb-12 lg:hidden" />
+      <section
+        class="container flex flex-col md:flex-row justify-evenly items-center"
+      >
+        <nav class="flex flex-col text-white gap-y-4 my-14 md:my-0">
+          <a href="">Inicio</a>
+          <a href="">Sobre Nosotros</a>
+          <a href="">Planes</a>
+          <a href="">Precios</a>
+          <a href="">Política de Privacidad</a>
+        </nav>
+
+        <img
+          src="./images/logo.png"
+          class="self-center mb-16 hidden lg:block"
+        />
+
+        <div class="flex flex-row">
+          <a href="">
+            <img src="./images/icon-facebook.svg" class="w-8 mx-5" />
+          </a>
+          <a href="">
+            <img src="./images/icon-twitter.svg" class="w-8 mx-5" />
+          </a>
+          <a href="">
+            <img src="./images/icon-instagram.svg" class="w-8 mx-5" />
+          </a>
+        </div>
+      </section>
+      <p class="text-white text-center mt-7">
+        Tlf: +34 678 123 456
+      </p>
+      <p class="text-white text-center">
+        Email: fitzone@gmail.com
+      </p>
+      <p class="text-white text-center mt-7">
+        &copy; 2024 - Todos los derechos reservados
+      </p>
+    </footer>
+
+    <button id="btnTop" onclick="topFunction()" class="bg-dark-red rounded-full fixed hidden bottom-14 right-14 z-50 py-4 px-5 opacity-75">
+      <img src="./images/arrow-up-solid.svg" class="w-6">
+    </button>
+
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
